@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+   
+   
+    
+}
+.column {
+   padding: 2px;
+   flex: 25% ;
+    max-width: 100%;
+    vertical-align: center;
+}
+.column img {
+ height: 30vh;
+ max-width: 100%;
+ margin-bottom: 3px;
+ transition: .3 sec;
+}
+.column img:hover {
+    box-shadow:   3px 3px 4px rgb(28, 29, 29, .7);
+}
+@media  screen and (max-width: 600px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
